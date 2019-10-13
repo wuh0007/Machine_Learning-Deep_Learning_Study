@@ -27,9 +27,8 @@ x_norm = [x_ones x_norm];
 theta = zeros(size(x_norm,2),1);
 alpha = 0.1;
 iterations = 3000;
-lamta = 10;%adjust value of lamta here.
 % Call the Gradient descent function
-[J,theta] = gradient_descent_logistic_regression_regularized(theta,x_norm,y,alpha,iterations,lamta)
+[J,theta] = gradient_descent_logistic_regression(theta,x_norm,y,alpha,iterations)
 
 %Plot the Cost Function
 figure;
